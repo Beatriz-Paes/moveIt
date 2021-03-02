@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 import styles from "../styles/components/CountDown.module.css";
 
+import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+import CloseIcon from "@material-ui/icons/Close";
+import CheckCircleIcon from "@material-ui/icons/CheckCircle";
+import { green } from '@material-ui/core/colors';
+
 let countDownTimeOut: NodeJS.Timeout;
 
 export function CountDonw() {
@@ -54,6 +59,7 @@ export function CountDonw() {
       {hasFinished ? (
         <button disabled className={styles.countDownButton}>
           Ciclo encerrado
+          <CheckCircleIcon style={{ fontSize: 28, paddingLeft: 6, color: '#4CD62B'}}/>
         </button>
       ) : (
         <>
@@ -64,6 +70,7 @@ export function CountDonw() {
               onClick={resetCountDown}
             >
               Abandonar Ciclo
+              <CloseIcon style={{ fontSize: 28, paddingLeft: 6, paddingTop: 2}} />
             </button>
           ) : (
             <button
@@ -72,6 +79,7 @@ export function CountDonw() {
               onClick={startCountDown}
             >
               Iniciar um ciclo
+              <ArrowRightIcon fontSize="large" />
             </button>
           )}
         </>

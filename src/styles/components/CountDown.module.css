@@ -44,6 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  align-content: center;
 
   border: 0;
   border-radius: 5px;
@@ -74,6 +75,8 @@
 .countDownButton:disabled {
   background: var(--white);
   color: var(--text);
+
+  border-bottom: 3px solid #4CD62B;
 
   cursor: not-allowed;
 }

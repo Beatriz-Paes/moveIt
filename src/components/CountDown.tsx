@@ -4,7 +4,6 @@ import styles from "../styles/components/CountDown.module.css";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import CloseIcon from "@material-ui/icons/Close";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
-import { green } from '@material-ui/core/colors';
 
 let countDownTimeOut: NodeJS.Timeout;
 

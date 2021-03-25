@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
             name="description"
             content="MoveIt. Unindo Produtividade e Bem-estar."
           ></meta>
-          <meta property="og:image" content="public/logo-full.svg"></meta>
+          <meta property="og:image" content="/logo-full.svg"></meta>
         </Head>
         <body>
           <Main />
